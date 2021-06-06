@@ -15,14 +15,14 @@ public class SampleFPWithStreamAndMethodReferencePredicateReturn {
         System.out.println(findDoubleOfTheFirstEvenNumberWhichISGreaterThan3FP(numbers));
     }
 
-    private static boolean isEven(int number) {
+    /*private static boolean isEven(int number) {
         return number % 2 == 0;
     }
 
     private static boolean isGreaterThan3(int number) {
         return number > 3;
     }
-
+*/
     private static int doubleIt(int number) {
         return number * 2;
     }
@@ -39,14 +39,12 @@ public class SampleFPWithStreamAndMethodReferencePredicateReturn {
         Stream<Integer> temp = numbers.stream() // stream is a fancy iterator in jav 8
                 .filter(isGreaterThan.apply(7))// filter items which is greater than 3.. this is eager now
                 .filter(isEven) // filter items which are even
-                .map(SampleFPWithStreamAndMethodReferencePredicateReturn::doubleIt); // calculate double and map it
+                .map(SampleFPWithStreamAndMethodReferencePredicateReturn::doubleIt);
+
         return temp
                 .findAny() // gets any item which is Optional
-                .get(); // get the int item
+                .orElse(0);
 
-
-        //filter and map etc.. are called intermediate operations
-        //findAny,collect,reduce are called terminal operation
 
     }
 }
