@@ -1,8 +1,8 @@
-#GraphQL
+## 1. GraphQL
 
 GraphQl is a query language used to query multiple dbs at the same time and multi level queries.
 
-##Environment setup
+##  2. Environment setup
 1. Install npm
 2. Setup babel dependencies.
 
@@ -13,7 +13,7 @@ Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a
     - Source code transformations (codemods)
     - Check out these videos for inspiration [here](https://babeljs.io/videos.html)
 
-##Setting up project
+##  3. Setting up project
 
 1. Create directory graphql_Test
 2. Create package.json by executing npm init
