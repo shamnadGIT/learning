@@ -3,7 +3,7 @@ mutation {
   {
     firstName : "Shamnad",
     lastName : "S",
-    gender : FEMALE
+    gender : MALE
     email :"m@m.com"
   }) {
     id, firstName, gender, contacts {
