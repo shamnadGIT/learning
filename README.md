@@ -1,2 +1,2 @@
 # learning
-Trying to learn some programming constructs as part of the projects
+These are some experiments with some new programming constructs/technology/use cases etc..
